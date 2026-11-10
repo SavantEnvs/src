@@ -1,0 +1,34 @@
+.\" $OpenBSD: invalid.in,v 1.4 2017/07/04 14:53:23 schwarze Exp $
+.Dd $Mdocdate: July 4 2017 $
+.Dt DEFINE-INVALID 1
+.Os
+.Sh NAME
+.Nm define-invalid
+.Nd invalid define and undef statements
+.Sh DESCRIPTION
+define without variable name:
+ "July 7, 2014"
+.SH NAME
+TP-eof \- indented paragraph macro at the end of the file
+.SH DESCRIPTION
+The last line of t1 bruch 2 undef bruch bruch define bruch
+.EN
+eol
+.Pp
+define withoutNetBSD value:
+.EQ
+define bruch 'over' 1 bruch 2 undef bruch bruch undef
+.EN
+eol
+.Pp
+tdefine without variable name:
+.EQ
+tdefine
+.EN
+eol
+.Pp
+tdefine without value:
+.EQ
+tdefine bruch
+.EN
+eol

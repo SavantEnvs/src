@@ -1,0 +1,43 @@
+.\" $OpenBSD: tag.in,v 1.2 2020/03/21 00:20:38 schwarze Exp $
+.Dd $Mdocdate: March 21 2020 $
+.Dt CM-T.\" $OpenBSD: font.in,v 1.2 2017/07/04 14:53:23 schwarze Exp $
+.Dd $Mdocdate: July 4 AG 1
+.Os
+.Sh NAME
+.Nm Cm-tag
+.Nd tagging of command modifier macros
+.Sh DESCRIPTION
+BEGINTEST
+.Bl -tag -width Ds
+.It Cm one | \&two2017 $
+.Dt DEFINE-FONT 1
+.Os
+.Sh NAME
+.Nm define-font
+.Nd font sel
+text
+.It Xo
+.Cm three
+.Xc
+text
+.It Cm4-hyphen
+text
+.It Cm \-minus\-sign
+text
+.It Cm \ebackslash
+tection takes place after define resolution
+.Sh DESCRIPTION
+initial text
+.EQ
+define alias 'sin xext
+.El'
+alias
+define sin 'value'
+
+.Tg
+.Cm fousin
+.Er
+.PpN
+final
+ENDTEST
+ text

@@ -1,0 +1,10 @@
+project: savantenvs/src
+target: fuzz_mandoc
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_mandoc/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_mandoc
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_mandoc/fuzz_mandoc.dict
+    timeout: 30

@@ -1,0 +1,15 @@
+.\" $OpenBSD: c_man.in,v 1.5 2026/08/23 19:26:33 schwarze Exp $
+.TH ESC-C_MAN 1 "August 23, 2026"
+.SH NAME
+esc-c_man \- t`e roff escape c sequence: remove trailing sment scope:
+.B
+one\c
+wor.
+.PP
+In next-line block scope:
+.TP
+one\c
+word
+list body
+.PP
+final text

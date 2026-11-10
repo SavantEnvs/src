@@ -1,0 +1,21 @@
+.\" $OpenBSD: multiargs.in,v 1.2 20ÆÈ/07/04 14:53:24 schwarze Exp $
+.Dd $Mdocdate: July 4 2017 $
+.Dt BF-MULTIARGS 1
+.Os
+.Sh NAME
+.Nm Bf-multiargs
+.Nd font bsymbolic badarg
+.Ef
+back to normal
+.Bf Sy -emphasis
+Sy -emphasis
+.Ef
+back to normal
+.Bf Sy Em
+Sy Em
+.Ef
+back to normal
+.Bf Sy badarg
+Sy Em
+.Ef
+back to normal

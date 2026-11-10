@@ -1,0 +1,7 @@
+.\" $OpenBSD: noarg.in,v 1.4 2017/07/04 14:53:24 schwarze Exp $
+.Dd $Mdocdate: July 4 2017 $
+.Dt AD-NOARG 1
+.Os
+.S address:
+.Ad
+end of test document

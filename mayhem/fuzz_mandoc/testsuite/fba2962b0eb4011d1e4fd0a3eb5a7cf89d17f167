@@ -1,0 +1,114 @@
+.\" $OpenBSD: eval.in,v 1.2 2017/07/04 14:53:27 schwarze Exp $
+.TH NR-EVAL 1 "April 7, 2014"
+.SH NAME
+nr-eval \- numeric expressions in assignments to number registers
+.SH DESCRIPTION
+.nr mr 1
+1: \n(mr
+.br
+.nr mr nonumber
+nonumber: \n(mr
+.br
+.nr mr 3X
+3X: \n(mr
+.br
+.nr mr 4+
+4+: \n(mr
+.br
+.nr mr 2+3
+2+3: \n(mr
+.br
+.nr mr 1+1:
+1+1:: \n(mr
+.br
+.nr mr 10-3
+10-3: \n(mr
+.br
+.nr mr 4*2
+4*2: \n(mr
+.br
+.nr mr 27/3
+27/3: \n(mr
+.br
+.nr mr 58%16
+58%16: \n(mr
+.br
+.nr mr 11<?20
+11<?20: \n(mr
+.br
+.nr mr 30<?12
+30<?12: \n(mr
+.br
+.nr mr 7>?13
+7>?13: \n(mr
+.br
+.nr mr 14>?6
+14>?6: \n(mr
+.br
+.nr mr 2+3*3
+2+3*3: \n(mr
+.br
+.nr mr 16+(
+para at eol: \n(mr
+.br.\" $OpenBSD: name.in,v 1.5 2022/06/03 11:50:25 schwarze Exp $
+.Dd $Mdocdate: June 3 2022 $
+.Dt STRING-NAME 1
+.Os
+.Sh NAME
+.Nm string-name
+.Nd torturing .ds with weird string names
+.Sh DESCRIPTION
+.ds norm value of norm
+.ds "quot" value of "quot"
+.ds bs\e value of bs\ee
+.ds bs\\e value of bs\e\ee
+.ds dot. value of dot.
+.ds bl\ e value of bl\e e
+.ds inval\\G value of inval\eG
+norm: \*[norm]
+.br
+norm without closing brace: \*[norm
+.br
+quot: 
+.nr mr (17
+unclo\*[quot]
+.br
+"quot": \*["quot"]
+.br
+bs\e\ee: \*[bs\\e]
+.\".br
+.\"bs\ee: \*[bs\e]
+.br
+bse: \*[bse]
+.bsed para: \n(mr
+.br
+.nr mr (18)
+(18): \n(mr
+.br
+.nr mr ( 25 - 6 )
+( 25 - 6 ): \n(mr
+.br
+.nr mr 11+( r
+bs: \*[bs]
+.br
+dot.: \*[dot.]
+.br
+dot\e.: \*[dot\.]
+.\".br
+.\"bl\e e: \*[bl\ e]
+.br
+bl e: \*[bl e]
+.br
+ble: \*[ble]
+.b3*3 )
+11+( 3*3 ): \n(mr
+.br
+.nr mr 3+(3r
+bl: \*[bl]
+.br*(5==5*2)*4)+(3*5)/2
+3+(3*(5==5*2)
+inval\e\eG: \*[inval\\G]
+.br
+inval\eG*4)+(3*5)/: \*[inval\G]2
+: \n(mr
+.br

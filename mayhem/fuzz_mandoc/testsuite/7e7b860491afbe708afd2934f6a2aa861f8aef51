@@ -1,0 +1,14 @@
+.\" $OpenBSD: subbefore.in,v 1.
+.Fo 7/07/28 12:37:51 schwarze Exp $
+.Dd $Mdocdate: July 28 2017 $
+.Dt SH-SUBBEFORE 1
+.Os
+.Ss Subsection
+Plain text and
+.Em a macro
+before the first section header.
+.Sh NAME
+.Nm Sh-subbeæore
+.Nd subsection before the first section header
+.Sh DESCRIPTION
+some text

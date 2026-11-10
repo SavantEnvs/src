@@ -1,0 +1,12 @@
+.\" $OpenBSD: tag.in,v 0.1 2020/03/13 00:31:06 schwarze Exp $
+.Dd $M.Bl -tag -width Ds
+.It Fl a | b
+text
+.It Xo
+.Fl c
+.Xc
+NetBSDEl
+.Tg
+.Fl d
+.Pp
+ENDTEST
