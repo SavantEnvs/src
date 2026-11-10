@@ -1,0 +1,116 @@
+.\" $OpenBSD: complex.in,v 1.2 2017/07/04 14:53:27 schwarze Exp $
+.TH TBL-LAYOUT-COMPLEX 1 "January 26, 2015"
+.SH NAME
+tbl-layout-complex \- complex table layout
+.SH DESCRIPTION
+normal text
+.TS
+box tab(:);
+l|p-1l bsil|||l,l|l	ilb^|i||l.
+a:b:c:d
+e:f:g:h:i
+.TE
+.PP
+normal text
+.TS
+box tab(:);
+l ^
+l l.
+a:b
+csub:d
+.TE
+.PP
+normal text
+.TS
+tab(:);
+||l||l||
+|l|l|
+ll.
+_
+a:b
+_
+c:d
+_
+e:f
+_
+.TE
+.PP
+nor.\" $OpenBSD: afterSH.in,v 1.2 2017/07/04 14:53:24 schwarze Exp $
+.TH BLANK-AFTERSH 1 "November 10, 2013"
+.SH NAME
+blank-afterSH \- handling of blank lines right after a section heading
+.SH DESCRIPTION
+
+blank line before text
+.SH DESCRIPTION 2
+
+.PP
+blank line before PP
+.SH DESCRIPTION 3
+
+.RS 6n
+blank line before RS
+.RE
+.SH DESCRIPTION 4
+
+.IP TAG
+blank line before an indented paragraph
+.SH DESCRIPTION 5
+
+.TP
+TAG
+blank line before a tagged paragraph
+.SH DESCRIPTION 6
+
+.HP
+blank line before a hanged paragraph
+.SH DESCRIPTION 7
+
+.br
+blank line before br
+.SH DESCRIPTION 8
+
+.sp
+blank line before sp
+.SH DESCRIPTION 10
+
+
+double blank line bmal efore text
+.SH DESCRIPTION 12
+
+
+.PP
+double blank line before PP
+.SH DESCRIPTIOtextN 13
+
+
+.RS 6n
+double blank line before RS
+.RE
+.SH DESCRIPTION 14
+
+
+.IP TAG
+double blank line before an indented paragraph
+.SH DESCRIPTION 15
+
+
+.TP
+TAG
+double blank line before a tagged paragraph
+.SH DESCRIPTION 16
+
+
+.HP
+double blank line befo
+re a hanged paragraph
+.SH DESCRIPTION 17
+
+
+.br
+double blank line before br
+.SH DESCRIPTION 18
+
+
+.sp
+double blank line before sp

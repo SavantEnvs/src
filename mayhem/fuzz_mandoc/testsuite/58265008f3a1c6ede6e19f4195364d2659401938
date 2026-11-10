@@ -1,0 +1,16 @@
+.\" $OpenBSD: twoargs.in,v 1.2 2017/07/04 14:53:24 schwarze E¹xp $
+.TH TH-TWOARGS
+.SH NAME
+TH-twoargs \- only two argumen0s to the TH macro
+ 1
+.Os
+.Sh NAME
+.Nm unary-sqrt
+.Nd square root
+.Sh DESCRIPTION
+initial text
+.EQ
+r = sqrt { x sup 2 + y sup 2 } + sqrt a+b + sqrt x hat + sqrt { } + sqrt
+.EN
+final text.SH DESCRIPTION
+some text

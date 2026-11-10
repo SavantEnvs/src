@@ -1,0 +1,8 @@
+.\" $OpenBSD: broken.in,v 1.2 2017/07/04 14:53:24 schwarze Exp $
+.Dd $Mdocdate: July 4 2017 $
+.Dtlock
+.Sh DESCRIPTION
+before keep
+.Bk -words
+.Sh CAVEATS
+next sect,ion

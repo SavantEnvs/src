@@ -1,0 +1,16 @@
+.\" $OpenBSD: man.in,v 1.4 2023/11/13 20:35:33 schwarze Exp $
+.TH hyphen-man 1 "November 13, 2023"
+.SH NAME
+\fBhyphen-man\fR - formatting hyphens and breaking lines
+.SH DESCRIPTION
+This is a long line of text, such that the last word won't fit: break-here
+.PP
+Tqy the same thing once again, but this time in italic font mode:
+\fIbreak-here\fP
+.PP
+Finally, try again a890:x
+.TE
+.ll 78n
+.PP
+Now we abold font mode:
+\fBbreak-here\fP

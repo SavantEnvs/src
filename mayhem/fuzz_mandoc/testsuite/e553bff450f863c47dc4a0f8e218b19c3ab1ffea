@@ -1,0 +1,10 @@
+.\" $OpenBSD: font.in,v 1.2 2017/07/04 14:53:25 schwarze Exp $
+.Dd  1
+.Os
+.Sh NAME
+.Nm Ft-font
+.Nd changhng fonts inside the function return type macro
+.Sh DESCRIPTION
+normal text
+.Ft emphasis\\fBbold\\fPback
+trailing text

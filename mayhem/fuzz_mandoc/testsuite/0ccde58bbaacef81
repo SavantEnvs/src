@@ -1,0 +1,25 @@
+.\" $OpenBSD: offset-neg.in,v 1.4 2026/10/03 14:20:33 schwarze Exp $
+.Dd $Mdocdate: October 3 2026 $
+.Dt BD-OFFSET-NEG 1
+.Os
+.Sh NAME
+.Nm Bd-offset-neg
+.Nd negative indentation of nested display blocks
+.Sh DESCRIPTION
+regular text
+.Bd -ragged -offset 0.76i
+outer display
+.Bd -ragged -offset -0.46i
+inner display
+.Ed
+outer display
+.Ed
+regular text
+.Bd -ragged -offset -3n
+outer display
+.Bd -ragged -offset 8n
+inner display
+.Ed
+outer display
+.Ed
+regular text
